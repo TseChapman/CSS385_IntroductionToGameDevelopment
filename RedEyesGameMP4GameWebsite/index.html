@@ -26,13 +26,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/RedEyesGameMP4GameWebsite.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RedEyesGameMP4GameWebsite.data.gz",
-        frameworkUrl: buildUrl + "/RedEyesGameMP4GameWebsite.framework.js.gz",
-        codeUrl: buildUrl + "/RedEyesGameMP4GameWebsite.wasm.gz",
+        dataUrl: buildUrl + "/RedEyesGameMP4GameWebsite.data.br",
+        frameworkUrl: buildUrl + "/RedEyesGameMP4GameWebsite.framework.js.br",
+        codeUrl: buildUrl + "/RedEyesGameMP4GameWebsite.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "RedEyeGamesMP4",
-        productVersion: "0.1",
+        productVersion: "1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -45,8 +45,8 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "1280px";
-        canvas.style.height = "768px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
